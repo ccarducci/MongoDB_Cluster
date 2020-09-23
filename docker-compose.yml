@@ -12,7 +12,7 @@ services:
       TERM: xterm
     volumes:
       # - /etc/localtime:/etc/localtime:ro
-      - /Users/ccarducci/Sviluppo/Projects/Git/mongos/data/data1:/data/db
+      - /<local_directory>/data/data1:/data/db
   mongors1n2:
     container_name: mongors1n2
     image: mongo
@@ -25,7 +25,7 @@ services:
       TERM: xterm
     volumes:
       # - /etc/localtime:/etc/localtime:ro
-      - /Users/ccarducci/Sviluppo/Projects/Git/mongos/data/data2:/data/db
+      - /<local_directory>/data/data2:/data/db
   mongors1n3:
     container_name: mongors1n3
     image: mongo
@@ -38,7 +38,7 @@ services:
       TERM: xterm
     volumes:
       # - /etc/localtime:/etc/localtime:ro
-      - /Users/ccarducci/Sviluppo/Projects/Git/mongos/data/data3:/data/db
+      - /<local_directory>/data/data3:/data/db
   mongocfg1:
     container_name: mongocfg1
     image: mongo
@@ -49,7 +49,7 @@ services:
       - "27017"
     volumes:
       #- /etc/localtime:/etc/localtime:ro
-      - /Users/ccarducci/Sviluppo/Projects/Git/mongos/data/config1:/data/db
+      - /<local_directory>/data/config1:/data/db
   mongocfg2:
     container_name: mongocfg2
     image: mongo
@@ -60,7 +60,7 @@ services:
       - "27017"
     volumes:
       #- /etc/localtime:/etc/localtime:ro
-      - /Users/ccarducci/Sviluppo/Projects/Git/mongos/data/config2:/data/db
+      - /<local_directory>/data/config2:/data/db
   mongocfg3:
     container_name: mongocfg3
     image: mongo
@@ -71,7 +71,7 @@ services:
       - "27017"
     volumes:
       #- /etc/localtime:/etc/localtime:ro
-      - /Users/ccarducci/Sviluppo/Projects/Git/mongos/data/config3:/data/db
+      - /<local_directory>/data/config3:/data/db
   mongos1:
     container_name: mongos1
     image: mongo
